@@ -43,6 +43,7 @@
 		<zk-curator-version>5.1.0</zk-curator-version>
 
 
+		<graphql.java-version>16.2</graphql.java-version>
 
 	</properties>
 
@@ -147,6 +148,11 @@
 				<artifactId>curator-framework</artifactId>
 				<version>${zk-curator-version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-recipes</artifactId>
+				<version>${zk-curator-version}</version>
+			</dependency>
 
 
 			<!-- lombok -->
@@ -193,6 +199,13 @@
 			</dependency>
 
 
+
+			<!-- graphql-java -->
+			<dependency>
+				<groupId>com.graphql-java</groupId>
+				<artifactId>graphql-java</artifactId>
+				<version>${graphql.java-version}</version>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
